@@ -267,4 +267,122 @@ h1.heading {
     text-align: center;
     margin-left: auto;
 }
+.page-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px 0;
+    gap: 12px;
+}
+.page-number .number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #a0a0a0;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+}
+.page-number .next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    padding: 0 20px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #ffffff;
+    background-color: var(--secondary);
+    border-radius: 8px;
+}
+.page-number .active {
+    color: var(--secondary);
+    border: 1px solid var(--secondary);
+    background-color: #ffffff;
+}
+.page-number .number:hover:not(.active) {
+    color: var(--secondary);
+    border: 1px solid var(--secondary);
+}
 /* end main */
+/* start footer */
+.footer {
+    background: rgb(21 21 21);
+    color: rgba(255, 255, 255, 0.6);
+    padding: 80px 0 160px;
+}
+.footer .footer-container {
+    width: 1170px;
+    max-width: 100%;
+    min-height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+.footer-container .info-footer:first-child {
+    width: 270px;
+    height: 260px;
+    padding: 0 15px;
+}
+.footer-container .desc {
+    margin: 20px 0;
+}
+.app-img {
+    display: flex;
+    gap: 20px;
+}
+.footer-container .info-footer:nth-child(2),
+.footer-container .info-footer:nth-child(3),
+.footer-container .info-footer:nth-child(4) {
+    width: 200px;
+    height: 205px;
+    padding: 0 15px;
+}
+.info-footer a {
+    text-decoration: none;
+}
+.info-footer li {
+    height: 30px;
+}
+.info-footer a:hover {
+    color: var(--primary);
+}
+.info-footer .title {
+    color: var(--white);
+    font-size: 1.8rem;
+    margin: 8px 0 25px;
+}
+.footer-container .info-footer:last-child {
+    width: 300px;
+    height: 218px;
+}
+.info-footer .form {
+    display: flex;
+    flex-direction: column;
+}
+.info-footer .form .input {
+    background: #272727;
+    width: 270px;
+    height: 40px;
+    margin: 25px 0 10px;
+    padding: 0 20px;
+    border-radius: 40px;
+    border: none;
+}
+.info-footer .form .btn {
+    margin-right: auto;
+    width: 95px;
+    height: 40px;
+    background: var(--primary);
+    color: var(--white);
+    border-radius: 40px;
+}
+.info-footer .form .btn:hover {
+    background: var(--white);
+    color: var(--primary);
+}
